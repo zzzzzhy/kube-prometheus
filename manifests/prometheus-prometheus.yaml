@@ -49,3 +49,21 @@ spec:
   serviceMonitorNamespaceSelector: {}
   serviceMonitorSelector: {}
   version: 2.46.0
+  remoteWrite:
+  - url: "http://influxdb1-8.monitoring.svc.cluster.local:8086/api/v1/prom/write?db=prometheus"
+    basicAuth:
+      username:
+        name: influxdb
+        key: username
+      password:
+        name: influxdb
+        key: password
+  remoteRead:
+  - url: "http://influxdb1-8.monitoring.svc.cluster.local:8086/api/v1/prom/read?db=prometheus"
+    basicAuth:
+      username:
+        name: influxdb
+        key: username
+      password:
+        name: influxdb
+        key: password
