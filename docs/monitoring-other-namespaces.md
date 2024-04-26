@@ -30,7 +30,7 @@ local kp =
       },
 
       prometheus+:: {
-        namespaces: ["default", "kube-system", "monitoring", "foo"],
+        namespaces: ["default", "kube-system", "monitoring", "kubevirt", "openstack"],
       },
     },
   };

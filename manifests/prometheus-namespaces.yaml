@@ -1,0 +1,5 @@
+- default
+- kube-system
+- monitoring
+- kubevirt
+- openstack
